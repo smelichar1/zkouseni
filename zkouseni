@@ -1,0 +1,46 @@
+let suma = 0;
+
+for (let i = 1; i <= 5; i++) {
+    let userInput = prompt(`Zadejte ${i}. číslo:`);
+    let cislo = parseFloat(userInput);
+    suma += cislo;
+}
+
+let prumer = suma / 5;
+console.log(`Průměr zadaných čísel je: ${prumer}`);
+
+
+let dalsicislo = 4;
+function Odmocnina(dalsicislo) { 
+    let vysledek = Math.sqrt(dalsicislo);
+    console.log(`Odmocnina z ${dalsicislo} je ${vysledek}.`);
+}
+
+Odmocnina(dalsicislo);
+
+
+let cislo = 2;
+
+function Lichost(cislo)
+{
+    if (cislo % 2 === 1){
+    console.log("cislo je liche");
+    }
+    else{
+        console.log("cislo neni liche")
+    }
+}
+Lichost(cislo);
+
+let pole = [1, 2, 3, 4, 5];
+let hledanyPrvek = 10;
+
+function prvekvpoli(pole,hledanyPrvek)
+{
+if (pole.indexOf(hledanyPrvek) !== -1) {
+    console.log("Prvek je v poli.");
+} else {
+    console.log("Prvek není v poli.");
+ }
+}
+prvekvpoli(pole,hledanyPrvek);
